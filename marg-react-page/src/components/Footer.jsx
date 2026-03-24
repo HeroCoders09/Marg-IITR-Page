@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaPhone,
   FaEnvelope,
@@ -45,15 +46,23 @@ export default function Footer({ showContact = true }) {
               </div>
 
               <div className="flex items-center justify-center rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-                <a
-                  href={mapUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border-2 border-neutral-800 bg-[#f0642b] px-5 py-3 font-semibold text-white hover:opacity-90"
-                >
-                  <FaMapMarkedAlt size={20} />
-                  Open Map
-                </a>
+                <div className="text-center">
+                  <p className="mb-3 text-lg font-semibold text-neutral-800">
+                    You can find us on Google Maps
+                  </p>
+                  <p className="mb-5 text-sm text-neutral-600">
+                    Tap below to open the exact location.
+                  </p>
+                  <a
+                    href={mapUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border-2 border-neutral-800 bg-[#f0642b] px-5 py-3 font-semibold text-white hover:opacity-90"
+                  >
+                    <FaMapMarkedAlt size={20} />
+                    Open Map
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -66,10 +75,8 @@ export default function Footer({ showContact = true }) {
             <div>
               <h3 className="mb-4 font-semibold tracking-wide text-white">QUICK LINKS</h3>
               <ul className="space-y-3 text-neutral-300">
-                <li><a className="hover:text-[#f0642b]" href="/">Home</a></li>
-                <li><a className="hover:text-[#f0642b]" href="/people">People</a></li>
-                <li><a className="hover:text-[#f0642b]" href="#resources">Resources</a></li>
-                <li><a className="hover:text-[#f0642b]" href="#research">Research</a></li>
+                <li><Link className="hover:text-[#f0642b]" to="/">Home</Link></li>
+                <li><Link className="hover:text-[#f0642b]" to="/people">People</Link></li>
               </ul>
             </div>
 
