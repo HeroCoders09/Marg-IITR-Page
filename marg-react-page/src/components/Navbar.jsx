@@ -24,7 +24,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-10">
           <li><NavLink to="/" className={linkClass} end>Home</NavLink></li>
           <li><NavLink to="/people" className={linkClass}>People</NavLink></li>
-          <li><a className="text-[#2e7fb6] hover:text-[#f0642b]" href="#research">Research</a></li>
+          <li><NavLink to="/research" className={linkClass}>Research</NavLink></li>
           <li><a className="text-[#2e7fb6] hover:text-[#f0642b]" href="#resources">Resources</a></li>
           <li>
             <a href="#contact" className="rounded-lg border-2 border-neutral-800 bg-[#f0642b] px-7 py-2 text-white font-semibold">
@@ -40,6 +40,7 @@ export default function Navbar() {
           <ul className="space-y-1 px-4 py-3">
             <li><NavLink to="/" end className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>Home</NavLink></li>
             <li><NavLink to="/people" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>People</NavLink></li>
+            <li><NavLink to="/research" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>Research</NavLink></li>
           </ul>
         </div>
       )}
