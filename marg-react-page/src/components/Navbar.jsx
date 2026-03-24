@@ -27,9 +27,16 @@ export default function Navbar() {
           <li><NavLink to="/research" className={linkClass}>Research</NavLink></li>
           <li><NavLink to="/resources" className={linkClass}>Resources</NavLink></li>
           <li>
-            <a href="#contact" className="rounded-lg border-2 border-neutral-800 bg-[#f0642b] px-7 py-2 text-white font-semibold">
+            <NavLink
+              to="/join-us"
+              className="ml-7.5 mr-5 rounded-[7px] border-0 px-10 py-2 text-[16px] font-extrabold text-white
+                        bg-size-[200%_110%] bg-top-right
+                        bg-[linear-gradient(to_right,#51b373_50%,#eb5a2c_50%)]
+                        transition-all duration-500 ease-in-out
+                        hover:bg-bottom-left"
+            >
               Join Us
-            </a>
+            </NavLink>
           </li>
           <li><img src={iitrLogo} alt="IITR logo" className="h-12 w-auto" /></li>
         </ul>
@@ -42,6 +49,7 @@ export default function Navbar() {
             <li><NavLink to="/people" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>People</NavLink></li>
             <li><NavLink to="/research" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>Research</NavLink></li>
             <li><NavLink to="/resources" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>Resources</NavLink></li>
+            <li><NavLink to="/join-us" className="mt-2 inline-block rounded-[7px] bg-[#eb5a2c] px-6 py-2 text-[16px] font-extrabold text-white" onClick={() => setOpen(false)}>Join Us</NavLink></li>
           </ul>
         </div>
       )}
