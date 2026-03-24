@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import PeoplePage from "./pages/PeoplePage";
 import ResearchPage from "./pages/ResearchPage";
+import ResourcesPage from "./pages/ResourcesPage";
 
 function HomePage() {
   return (
@@ -18,32 +19,15 @@ function HomePage() {
   );
 }
 
-function PeopleLayout() {
-  return (
-    <>
-      <PeoplePage />
-      <Footer showContact={false} />
-    </>
-  );
-}
-
-function ResearchLayout() {
-  return (
-    <>
-      <ResearchPage />
-      <Footer showContact={false} />
-    </>
-  );
-}
-
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/people" element={<PeopleLayout />} />
-        <Route path="/research" element={<ResearchLayout />} />
+        <Route path="/people" element={<><PeoplePage /><Footer showContact={false} /></>} />
+        <Route path="/research" element={<><ResearchPage /><Footer showContact={false} /></>} />
+        <Route path="/resources" element={<><ResourcesPage /><Footer showContact={false} /></>} />
       </Routes>
     </BrowserRouter>
   );

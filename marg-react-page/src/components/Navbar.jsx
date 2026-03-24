@@ -25,7 +25,7 @@ export default function Navbar() {
           <li><NavLink to="/" className={linkClass} end>Home</NavLink></li>
           <li><NavLink to="/people" className={linkClass}>People</NavLink></li>
           <li><NavLink to="/research" className={linkClass}>Research</NavLink></li>
-          <li><a className="text-[#2e7fb6] hover:text-[#f0642b]" href="#resources">Resources</a></li>
+          <li><NavLink to="/resources" className={linkClass}>Resources</NavLink></li>
           <li>
             <a href="#contact" className="rounded-lg border-2 border-neutral-800 bg-[#f0642b] px-7 py-2 text-white font-semibold">
               Join Us
@@ -41,6 +41,7 @@ export default function Navbar() {
             <li><NavLink to="/" end className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>Home</NavLink></li>
             <li><NavLink to="/people" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>People</NavLink></li>
             <li><NavLink to="/research" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>Research</NavLink></li>
+            <li><NavLink to="/resources" className="block rounded px-2 py-2 text-[#2e7fb6]" onClick={() => setOpen(false)}>Resources</NavLink></li>
           </ul>
         </div>
       )}
