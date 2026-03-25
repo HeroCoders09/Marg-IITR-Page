@@ -1,29 +1,34 @@
-import {
-  principalInvestigator,
-  researchScholars,
-  interns,
-  alumni,
-} from "../data/peopleData";
+import { principalInvestigator, researchScholars, interns, alumni } from "../data/peopleData";
 import { peopleGallery } from "../data/peopleGalleryData";
 import { FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { membersData } from "../data/membersData";
 
 function SectionLabel({ children }) {
   return (
-    <div className="mb-6 inline-flex items-center rounded-r-2xl bg-[#f0642b] px-6 py-2.5 text-white font-semibold shadow-sm">
+    <div className="mb-6 inline-flex items-center rounded-r-2xl bg-[#f0642b] px-6 py-2.5 font-semibold text-white shadow-sm">
       {children}
     </div>
   );
 }
 
+// map member slug by name so card can still open dynamic route
+const slugByName = Object.fromEntries(
+  membersData.map((m) => [m.name.trim().toLowerCase(), m.slug])
+);
+
 function PersonCard({ person }) {
-  return (
-    <article className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <div className="relative overflow-hidden">
+  const slug = slugByName[person.name.trim().toLowerCase()];
+
+  // fallback: if no slug match, render non-clickable card
+  const CardInner = (
+    <article className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <div className="relative overflow-hidden bg-neutral-100">
         <img
           src={person.image}
           alt={person.name}
-          className="h-60 w-full object-cover transition duration-500 group-hover:scale-105"
+          className="aspect-square w-full object-contain"
           loading="lazy"
         />
       </div>
@@ -34,9 +39,25 @@ function PersonCard({ person }) {
       </div>
     </article>
   );
+
+  if (!slug) return <div className="group block">{CardInner}</div>;
+
+  return (
+    <Link to={`/people/${slug}`} className="group block">
+      {CardInner}
+    </Link>
+  );
 }
 
 function PeopleGrid({ data }) {
+  if (!data.length) {
+    return (
+      <div className="rounded-xl border border-dashed border-neutral-300 bg-white p-6 text-center text-neutral-500">
+        No profiles added yet.
+      </div>
+    );
+  }
+
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {data.map((person) => (
@@ -54,14 +75,11 @@ function PeopleGalleryCarousel() {
   const timeoutRef = useRef(null);
 
   const goTo = (index) => {
-    if (isAnimating) return; // prevent rapid click glitches
+    if (isAnimating) return;
     setIsAnimating(true);
     setCurrent((index + total) % total);
-
     clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      setIsAnimating(false);
-    }, 500); // should match transition duration
+    timeoutRef.current = setTimeout(() => setIsAnimating(false), 500);
   };
 
   const prev = () => goTo(current - 1);
@@ -69,15 +87,11 @@ function PeopleGalleryCarousel() {
 
   useEffect(() => {
     if (paused) return;
-    const id = setInterval(() => {
-      setCurrent((prevIdx) => (prevIdx + 1) % total);
-    }, 4000);
+    const id = setInterval(() => setCurrent((prevIdx) => (prevIdx + 1) % total), 4000);
     return () => clearInterval(id);
   }, [paused, total]);
 
-  useEffect(() => {
-    return () => clearTimeout(timeoutRef.current);
-  }, []);
+  useEffect(() => () => clearTimeout(timeoutRef.current), []);
 
   return (
     <div
@@ -85,7 +99,6 @@ function PeopleGalleryCarousel() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* Sliding image track */}
       <div className="relative overflow-hidden bg-black">
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -93,27 +106,15 @@ function PeopleGalleryCarousel() {
         >
           {peopleGallery.map((item, i) => (
             <div key={i} className="w-full shrink-0">
-              <img
-                src={item.image}
-                alt={`Gallery ${i + 1}`}
-                className="h-65 w-full object-contain sm:h-105 md:h-130"
-              />
+              <img src={item.image} alt={`Gallery ${i + 1}`} className="h-65 w-full object-contain sm:h-105 md:h-130" />
             </div>
           ))}
         </div>
 
-        <button
-          onClick={prev}
-          className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-neutral-800 shadow hover:bg-white"
-          aria-label="Previous"
-        >
+        <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-neutral-800 shadow hover:bg-white" aria-label="Previous">
           <FaChevronLeft />
         </button>
-        <button
-          onClick={next}
-          className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-neutral-800 shadow hover:bg-white"
-          aria-label="Next"
-        >
+        <button onClick={next} className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-neutral-800 shadow hover:bg-white" aria-label="Next">
           <FaChevronRight />
         </button>
 
@@ -122,23 +123,17 @@ function PeopleGalleryCarousel() {
         </div>
       </div>
 
-      {/* Caption */}
-      <div className="border-t border-neutral-200 bg-white px-5 py-4 sm:px-6 min-h-23">
-        <p className="text-[15px] leading-7 text-neutral-700 sm:text-base">
-          {peopleGallery[current].text}
-        </p>
+      <div className="min-h-23 border-t border-neutral-200 bg-white px-5 py-4 sm:px-6">
+        <p className="text-[15px] leading-7 text-neutral-700 sm:text-base">{peopleGallery[current].text}</p>
       </div>
 
-      {/* Dots */}
       <div className="flex flex-wrap justify-center gap-2 bg-neutral-50 px-4 py-4">
         {peopleGallery.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
             aria-label={`Slide ${i + 1}`}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-              i === current ? "w-7 bg-[#f0642b]" : "w-2.5 bg-neutral-300 hover:bg-neutral-400"
-            }`}
+            className={`h-2.5 rounded-full transition-all duration-300 ${i === current ? "w-7 bg-[#f0642b]" : "w-2.5 bg-neutral-300 hover:bg-neutral-400"}`}
           />
         ))}
       </div>
@@ -150,9 +145,7 @@ export default function PeoplePage() {
   return (
     <main className="bg-linear-to-b from-white to-neutral-50">
       <section className="mx-auto max-w-7xl px-4 pt-10 pb-6 sm:pt-14">
-        <h1 className="text-center text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
-          People
-        </h1>
+        <h1 className="text-center text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">People</h1>
         <p className="mx-auto mt-3 max-w-2xl text-center text-neutral-600">
           Meet the team behind Memory and Anxiety Research Group (MARG), IIT Roorkee.
         </p>
@@ -164,20 +157,12 @@ export default function PeoplePage() {
           <article className="overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm transition duration-300 group-hover:shadow-xl">
             <div className="grid md:grid-cols-[360px_1fr]">
               <div className="overflow-hidden">
-                <img
-                  src={principalInvestigator.image}
-                  alt={principalInvestigator.name}
-                  className="h-85 md:h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                />
+                <img src={principalInvestigator.image} alt={principalInvestigator.name} className="h-85 w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-full" />
               </div>
               <div className="flex flex-col justify-between">
                 <div className="p-6 sm:p-8">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900">
-                    {principalInvestigator.name}
-                  </h2>
-                  <p className="mt-1 text-base sm:text-lg text-[#f0642b] font-semibold">
-                    {principalInvestigator.role}
-                  </p>
+                  <h2 className="text-2xl font-bold text-neutral-900 sm:text-3xl">{principalInvestigator.name}</h2>
+                  <p className="mt-1 text-base font-semibold text-[#f0642b] sm:text-lg">{principalInvestigator.role}</p>
                   <p className="mt-5 leading-8 text-neutral-700">{principalInvestigator.bio}</p>
                 </div>
                 <div className="flex items-center gap-2 bg-neutral-100 px-6 py-3 text-sm font-medium text-neutral-700">
@@ -204,9 +189,8 @@ export default function PeoplePage() {
         <PeopleGrid data={alumni} />
       </section>
 
-      {/* NEW: Gallery section from old HTML */}
       <section className="mx-auto max-w-7xl px-4 pt-4 pb-16">
-        <h2 className="mb-6 text-center text-3xl sm:text-4xl font-bold text-neutral-900">Gallery</h2>
+        <h2 className="mb-6 text-center text-3xl font-bold text-neutral-900 sm:text-4xl">Gallery</h2>
         <PeopleGalleryCarousel />
       </section>
     </main>

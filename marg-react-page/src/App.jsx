@@ -8,6 +8,7 @@ import PeoplePage from "./pages/PeoplePage";
 import ResearchPage from "./pages/ResearchPage";
 import ResourcesPage from "./pages/ResourcesPage";
 import JoinUsPage from "./pages/JoinUsPage";
+import MemberProfilePage from "./pages/MemberProfilePage";
 
 function HomePage() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/research" element={<><ResearchPage /><Footer showContact={false} /></>} />
         <Route path="/resources" element={<><ResourcesPage /><Footer showContact={false} /></>} />
         <Route path="/join-us" element={<><JoinUsPage /><Footer showContact={false} /></>} />
+        <Route path="/people/:slug" element={<MemberProfilePage />} />
       </Routes>
     </BrowserRouter>
   );
