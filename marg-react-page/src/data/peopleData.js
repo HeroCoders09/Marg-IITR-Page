@@ -1,20 +1,22 @@
-import asthana from "../assets/photos/AsthanaSirResize.jpeg";
+import asthana from "../assets/photos/AsthanaSirResize.png";
 
-import tripureshwari from "../assets/photos/TripureshwariPaulResize.jpg";
-import kaneez from "../assets/photos/KaneezFatimaResize.jpg";
-import vidisha from "../assets/photos/VidishaMaithaniResize.jpg";
-import vrashal from "../assets/photos/VrashalVerma.png";
-import dipti from "../assets/photos/DiptiSinghResize.jpg";
-import sakshima from "../assets/photos/SakshimaMishra.png";
-import ahalya from "../assets/photos/Ahalya.jpg";
-import abhishek from "../assets/photos/Default.png";
+import tripureshwari from "../assets/photos/TripureshwariPaulResize.png";
+import kaneez from "../assets/photos/KaneezFatimaResize.png";
+import vidisha from "../assets/photos/VidishaMaithaniResize.png";
+import vrashal from "../assets/photos/VrashalVermaResize.png";
+import dipti from "../assets/photos/DiptiSinghResize.png";
+import sakshima from "../assets/photos/SakshimaMishraResize.png";
+import ahalya from "../assets/photos/AhalyaResize.png";
+import abhishek from "../assets/photos/AbhishekKarmakar.png";
+import priyadarshini from "../assets/photos/PriyadarshiniDeoriResize.png";
+import raksha from "../assets/photos/RakshaSinghResize.png";
 
-import kapil from "../assets/photos/KapilFaujdar.jpeg";
+import kapil from "../assets/photos/KapilFaujdarResize.png";
 
-import ankita from "../assets/photos/AnkitaVermaResize.jpg";
-import sharmili from "../assets/photos/SharmiliMitraResize.jpg";
-import sambath from "../assets/photos/SambathRd.jpg";
-import hiranmaya from "../assets/photos/HiranmayakaparthiRamadugu.jpeg";
+import ankita from "../assets/photos/AnkitaVermaResize.png";
+import sharmili from "../assets/photos/SharmiliMitraResize.png";
+import sambath from "../assets/photos/SambathRdResize.png";
+import hiranmaya from "../assets/photos/HiranmayakaparthiRamaduguResize.png";
 
 export const principalInvestigator = {
   name: "Prof. Manish Kumar Asthana",
@@ -33,6 +35,8 @@ export const researchScholars = [
   { name: "Dipti Singh", role: "Ph.D. Scholar, Psychology", image: dipti },
   { name: "Sakshima Mishra", role: "Ph.D. Scholar, Psychology", image: sakshima },
   { name: "Abhishek Karmakar", role: "Ph.D. Scholar, Psychology", image: abhishek },
+  { name: "Priyadarshini Deori", role: "Ph.D. Scholar, Psychology", image: priyadarshini },
+  { name: "Raksha Singh", role: "Ph.D. Scholar, Psychology", image: raksha },
 ];
 
 export const interns = [

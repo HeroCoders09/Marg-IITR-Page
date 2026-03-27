@@ -1,16 +1,18 @@
-import vidishaImg from "../assets/photos/VidishaMaithani.jpg";
-import sharmiliImg from "../assets/photos/SharmiliMitra.jpg";
-import sambathImg from "../assets/photos/SambathRd.jpg";
-import ankitaImg from "../assets/photos/AnkitaVerma.jpg";
-import hiranmayaImg from "../assets/photos/HiranmayakaparthiRamadugu.jpeg";
-import tripureshwariImg from "../assets/photos/TripureshwariPaul.jpg";
-import kaneezImg from "../assets/photos/KaneezFatima.jpg";
+import vidishaImg from "../assets/photos/VidishaMaithani.png";
+import sharmiliImg from "../assets/photos/SharmiliMitra.png";
+import sambathImg from "../assets/photos/SambathRd.png";
+import ankitaImg from "../assets/photos/AnkitaVerma.png";
+import hiranmayaImg from "../assets/photos/HiranmayakaparthiRamadugu.png";
+import tripureshwariImg from "../assets/photos/TripureshwariPaul.png";
+import kaneezImg from "../assets/photos/KaneezFatima.png";
 import vrashalImg from "../assets/photos/VrashalVerma.png";
-import ahalyaImg from "../assets/photos/Ahalya.jpg";
-import diptiImg from "../assets/photos/DiptiSingh.jpg";
+import ahalyaImg from "../assets/photos/Ahalya.png";
+import diptiImg from "../assets/photos/DiptiSingh.png";
 import sakshimaImg from "../assets/photos/SakshimaMishra.png";
-import kapilImg from "../assets/photos/KapilFaujdar.jpeg";
-import abhishekImg from "../assets/photos/Default.png";
+import kapilImg from "../assets/photos/KapilFaujdar.png";
+import abhishekImg from "../assets/photos/AbhishekKarmakar.png";
+import priyadarshiniImg from "../assets/photos/PriyadarshiniDeori.png";
+import rakshaImg from "../assets/photos/RakshaSingh.png";
 
 export const membersData = [
   {
@@ -524,6 +526,48 @@ export const membersData = [
         "Student Membership - Clinical Psychology Society of India (CPSI)",
         "Life Membership - Indian Academy of Neuroscience (IAN)",
         "Student Graduate Member - American Psychological Association (APA)",
+      ],
+    },
+  },
+  {
+    slug: "raksha-singh",
+    name: "RAKSHA SINGH",
+    role: "Ph. D Scholar, Psychology",
+    category: "research-scholars",
+    image: rakshaImg,
+    linkedin: "www.linkedin.com/in/rakshasingh97",
+    email:"raksha_s@hs.iitr.ac.in",
+    sections: {
+      about: [
+        "A Ph.D. scholar in Cognitive Psychology at MARG, she is driven by a passion for understanding the cognitive underpinnings of human behavior and how these insights can be translated into practical settings. Her professional background includes serving as a Junior Research Fellow (JRF) at the Defence Institute of Psychological Research (DIPR), DRDO Delhi, and as an Assistant Professor at MIT-ADT University, Pune. She holds a BA (Hons) and an MA in Psychology, complemented by a PG Diploma in Guidance and Counseling. Beyond her academic work, she enjoys reading, writing, and following evolving socio-cultural trends."
+      ],
+      background: [
+        "Worked as a JRF at DIPR, DRDO Delhi",
+        "Worked as an Assistant Professor at MIT-ADT University in Pune",
+        "PG Diploma in Guidance & Counselling, Jamia Millia Islamia",
+        "MA Psychology in Counselling, Indira Gandhi National Open University",
+        "BA Psychology Hons., St. Bede’s College, Shimla",
+      ],
+    },
+  },
+  {
+    slug: "priyadarshini-deori",
+    name: "PRIYADARSHINI DEORI",
+    role: "Ph. D Scholar, Psychology",
+    category: "research-scholars",
+    image: priyadarshiniImg,
+    sections: {
+      about:[
+        "Priyadarshini, a native of Dibrugarh, Assam has completed her Bachelors in Applied Psychology from Dr. Bhim Rao Ambedkar College, University of Delhi and her Masters in Applied Psychology (Clinical and Counseling Practice) from Tata Institute of Social Sciences, Mumbai where she worked in a Master’s dissertation titled, “Meaning Making of Intimacy in Married Couples of the Deori Tribe in Assam”. During her field work placements she has worked closely as trauma focused therapist trainee with marginalised communities under supervision. Sheworked as a Research Assistant for an ICSSR Project that studied the impact of climate change on mental health in climate sensitive districts of Assam. Her research interests include human cognition, psychopathology, trauma recovery and fear. Currently she is a PhD scholar in IIT Roorkee in cognitive psychology working in the area of fear extinction. She is an advocate of adopting indie dogs and loves cooking. She engages herself in spiritual activities to keep herself grounded. She is also a cultural enthusiast who likes exploring lesser known communities and their cultures."
+      ],
+      background: [
+        "B.A. in Applied Psychology, Dr. Bhim Rao Ambedkar College, University of Delhi.",
+        "M.A. in Applied Psychology (Clinical and Counseling Practice), Tata Institute of Social Sciences, Mumbai.",
+      ],
+      project:[
+        "Research Assistant for an ICSSR project studying the impact of climate change on mental health.",
+        "“AIKYAM”- Community Mental Health Project supporting youth with trauma informed care to navigate through emerging socio-political realities.",
+        "Developed a week long relationship programme for couples as an intern in Amaha."
       ],
     },
   },
