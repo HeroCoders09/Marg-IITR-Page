@@ -12,6 +12,14 @@ import priyadarshini from "../assets/photos/PriyadarshiniDeoriResize.png";
 import raksha from "../assets/photos/RakshaSinghResize.png";
 
 import kapil from "../assets/photos/KapilFaujdarResize.png";
+import anshita from "../assets/photos/AnshitaSinghResize.png";
+import divyanshu from "../assets/photos/DivyanshuTiwariResize.png";
+import harshita from "../assets/photos/HarshitaVermaResize.png";
+import nandini from "../assets/photos/NandiniDuttResize.png";
+import ishita from "../assets/photos/IshitaSachdevaResize.png";
+import arkajit from "../assets/photos/ArkajitChatterjeeResize.png";
+import annika from "../assets/photos/AnnikaDoldResize.png";
+import alisha from "../assets/photos/AlishaChatrathResize.png";
 
 import ankita from "../assets/photos/AnkitaVermaResize.png";
 import sharmili from "../assets/photos/SharmiliMitraResize.png";
@@ -40,7 +48,15 @@ export const researchScholars = [
 ];
 
 export const interns = [
+  { name: "Nandini Dutt", role: "Spark Intern, Psychology", image: nandini },
+  { name: "Anshita Singh", role: "Intern, Psychology", image: anshita },
+  { name: "Divyanshu Tiwari", role: "Intern, Psychology", image: divyanshu },
+  { name: "Harshita Verma", role: "Intern, Psychology", image: harshita },
   { name: "Kapil Faujdar", role: "Intern, Psychology", image: kapil },
+  { name: "Arkajit", role: "Intern, Psychology", image: arkajit },
+  { name: "Ishita Sahdev", role: "Intern, Psychology", image: ishita },
+  { name: "Annika Dold", role: "Intern, Psychology", image: annika },
+  { name: "Alisha Chatrath", role: "Intern, Psychology", image: alisha },
 ];
 
 export const alumni = [

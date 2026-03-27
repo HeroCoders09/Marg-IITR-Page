@@ -7,8 +7,10 @@ import { membersData } from "../data/membersData";
 
 function SectionLabel({ children }) {
   return (
-    <div className="mb-6 inline-flex items-center rounded-r-2xl bg-[#f0642b] px-6 py-2.5 font-semibold text-white shadow-sm">
-      {children}
+    <div className="mb-6 flex justify-center">
+      <div className="inline-flex items-center rounded-full bg-[#f0642b] px-9 py-3 text-2xl font-semibold text-white shadow-sm">
+        {children}
+      </div>
     </div>
   );
 }
@@ -21,9 +23,8 @@ const slugByName = Object.fromEntries(
 function PersonCard({ person }) {
   const slug = slugByName[person.name.trim().toLowerCase()];
 
-  // fallback: if no slug match, render non-clickable card
   const CardInner = (
-    <article className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <article className="w-full overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md">
       <div className="relative overflow-hidden bg-neutral-100">
         <img
           src={person.image}
@@ -32,18 +33,18 @@ function PersonCard({ person }) {
           loading="lazy"
         />
       </div>
-      <div className="bg-[#f0642b] px-4 py-4 text-white">
-        <h3 className="text-lg font-semibold leading-tight">{person.name}</h3>
-        <div className="my-2 h-px w-2/3 bg-white/70" />
-        <p className="text-sm opacity-95">{person.role}</p>
+      <div className="bg-[#f0642b] px-2.5 py-2.5 text-white">
+        <h3 className="text-[14px] font-semibold leading-snug">{person.name}</h3>
+        <div className="my-1 h-px w-2/3 bg-white/70" />
+        <p className="text-[11px] leading-snug opacity-95">{person.role}</p>
       </div>
     </article>
   );
 
-  if (!slug) return <div className="group block">{CardInner}</div>;
+  if (!slug) return <div className="block">{CardInner}</div>;
 
   return (
-    <Link to={`/people/${slug}`} className="group block">
+    <Link to={`/people/${slug}`} className="block">
       {CardInner}
     </Link>
   );
@@ -59,7 +60,7 @@ function PeopleGrid({ data }) {
   }
 
   return (
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       {data.map((person) => (
         <PersonCard key={person.name} person={person} />
       ))}
