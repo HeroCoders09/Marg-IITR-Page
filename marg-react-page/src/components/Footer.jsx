@@ -70,19 +70,21 @@ export default function Footer({ showContact = true }) {
       )}
 
       <section className="border-t border-neutral-800 bg-black">
-        <div className="mx-auto w-[96%] max-w-375 px-4 py-10">
-          <div className="grid gap-10 md:grid-cols-[1.1fr_1.2fr_1fr_1.6fr] items-start">
+        <div className="mx-auto w-[96%] max-w-375 px-4 py-8">
+          <div className="grid items-start gap-10 md:grid-cols-[1.1fr_1.2fr_1fr_1.6fr]">
             <div>
-              <h3 className="mb-4 font-semibold tracking-wide text-white">QUICK LINKS</h3>
-              <ul className="space-y-3 text-neutral-300">
+              <h3 className="mb-4 text-[22px] font-semibold tracking-wide text-white">QUICK LINKS</h3>
+              <ul className="space-y-3 text-[18px] text-neutral-300">
                 <li><Link className="hover:text-[#f0642b]" to="/">Home</Link></li>
                 <li><Link className="hover:text-[#f0642b]" to="/people">People</Link></li>
+                <li><Link className="hover:text-[#f0642b]" to="/resources">Resources</Link></li>
+                <li><Link className="hover:text-[#f0642b]" to="/research">Research</Link></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="mb-4 font-semibold tracking-wide text-white">About Us</h3>
-              <ul className="space-y-3 text-neutral-300">
+              <h3 className="mb-4 text-[22px] font-semibold tracking-wide text-white">ABOUT US</h3>
+              <ul className="space-y-3 text-[18px] text-neutral-300">
                 <li>Memory Anxiety Research Group</li>
                 <li className="flex items-center gap-2">
                   <FaEnvelope className="text-[#f0642b]" /> iitrmarg@gmail.com
@@ -92,8 +94,8 @@ export default function Footer({ showContact = true }) {
             </div>
 
             <div>
-              <h3 className="mb-4 font-semibold tracking-wide text-white">FIND US</h3>
-              <div className="flex gap-4 text-neutral-300">
+              <h3 className="mb-4 text-[22px] font-semibold tracking-wide text-white">FIND US</h3>
+              <div className="flex gap-4 text-[18px] text-neutral-300">
                 <a className="hover:text-[#f0642b]" href="https://www.facebook.com/profile.php?id=100088522555025" target="_blank" rel="noreferrer"><FaFacebook /></a>
                 <a className="hover:text-[#f0642b]" href="https://www.instagram.com/iitrmarg/" target="_blank" rel="noreferrer"><FaInstagram /></a>
                 <a className="hover:text-[#f0642b]" href="https://www.linkedin.com/company/margiitr/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
@@ -104,6 +106,13 @@ export default function Footer({ showContact = true }) {
             <div className="md:justify-self-end">
               <img src={footerLogo} alt="MARG logo" className="h-24 md:h-28 w-auto" />
             </div>
+          </div>
+
+          <div className="mt-5 border-t border-neutral-500/80 pt-3 pb-0 text-center text-neutral-200">
+            <p className="text-m leading-5">© Copyright, 2022</p>
+            <p className="mt-1 text-m leading-5">
+              Developed & Moderated by: Gourav Kumar Solanki [Btech, CSE] || Omprakash Saran [Btech, CSE] 
+            </p>
           </div>
         </div>
       </section>

@@ -1,15 +1,19 @@
 import { useMemo, useState } from "react";
+
 import {
   journalArticles,
   conferenceProceedings,
   conferencePresentations,
+  Publications,
 } from "../data/researchData";
+
 import { FaExternalLinkAlt, FaSearch } from "react-icons/fa";
 
 const tabs = [
   { key: "journal", label: "Journal Articles", data: journalArticles },
   { key: "proc", label: "Conference Proceedings", data: conferenceProceedings },
   { key: "ppt", label: "Conference Presentations", data: conferencePresentations },
+  { key: "extra", label: "Publications", data: Publications },
 ];
 
 function TabButton({ active, onClick, children }) {

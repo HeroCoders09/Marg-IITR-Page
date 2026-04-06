@@ -1,3 +1,108 @@
+export const Publications = [
+  {
+    title:
+      "Inhibitory control training might be a gateway to enhance fear extinction",
+    authors: "Dar, K. F., & Asthana, M.K. (2026)",
+    venue:
+      "International Journal of Psychophysiology, 113335, ISSN 0167-8760",
+    link: "https://doi.org/10.1016/j.ijpsycho.2026.113335",
+  },
+  {
+    title:
+      "Cognitive reappraisal of conditioned fear: A systematic review",
+    authors: "Dar, K. F., & Asthana, M.K. (2025)",
+    venue:
+      "Journal of Behavior Therapy and Experimental Psychiatry, 2025, 102076, ISSN 0005-7916",
+    link: "https://doi.org/10.1016/j.jbtep.2025.102076",
+  },
+  {
+    title:
+      "Trait Anxiety and Fictional Exposure: How Movie Preferences Shape Psychological Resilience and Pandemic Preparedness",
+    authors: "Dar, K. F., & Asthana, M.K. (2025)",
+    venue:
+      "Journal of Psychological Perspective, 2025",
+    link: "https://doi.org/10.47679/jopp.7412602025",
+  },
+  {
+    title:
+      "Systematic Analysis of Medication Errors in an Indian Context Using the Swiss Cheese Model",
+    authors: "Verma, V., Singh, D., & Asthana, M. Kumar (2025)",
+    venue:
+      "Journal of Systems Thinking in Practice",
+    link: "https://doi.org/10.22067/jstinp.2025.93764.1155",
+  },
+  {
+    title:
+      "Music Genre Preference of Non-musicians",
+    authors: "Verma, A., RD Sambath, & Asthana, M.K. (2025)",
+    venue:
+      "Human-Centered Digitalization, Volume 3, Springer Nature Singapore",
+    link: "#",
+  },
+  {
+    title:
+      "An Analysis of Driving Hours on the Driver Preferential Use of the Dashboard: A Pilot Study",
+    authors: "Verma, V., & Asthana, M.K. (2025)",
+    venue:
+      "Human-Centered Digitalization, Volume 3, Springer Nature Singapore",
+    link: "#",
+  },
+  {
+    title:
+      "Innovation in Safety and Protection on Musculoskeletal Fatigue Due to Longer Standing Postures of Soldier",
+    authors: "Ahalya, V. S., & Asthana, M.K. (2025)",
+    venue:
+      "Responsible and Resilient Design for Society, Volume 5, Springer Nature Singapore",
+    link: "#",
+  },
+  {
+    title:
+      "Investigating the effect of memory strength within reactivation-extinction paradigm on cue-dependent amnesia",
+    authors: "Paul, T., & Asthana, M. K. (2025)",
+    venue:
+      "Neuroscience, Volume 582, Pages 11-2",
+    link: "https://doi.org/10.1016/j.neuroscience.2025.07.014",
+  },
+  {
+    title:
+      "Does cognitive reappraisal facilitate extinction?",
+    authors: "Dar, K. F., & Asthana, M. K. (2025)",
+    venue: "Cognition and Emotion, 1-10",
+    link: "https://doi.org/10.1080/02699931.2025.2467068",
+  },
+  {
+    title:
+      "Investigating the effect of continuous and partial reinforcement in conceptual fear generalization",
+    authors: "Mitra, S., Asthana, M.K. (2024)",
+    venue: "Sci Rep 14, 26305 (2024)",
+    link: "https://doi.org/10.1038/s41598-024-71575-0",
+  },
+  {
+    title:
+      "DCare: Empowering dementia caregivers in Indian families in informal care settings",
+    authors: "Kant, V., Tak, R., & Asthana, MK (2024)",
+    venue:
+      "Book: Design for Dementia, Mental Health and Wellbeing, Edition 1st, Routledge, eBook ISBN 9781003318262",
+    link: "#",
+  },
+  {
+    title:
+      "Attenuating conditioned fear using imagery-based interventions: An overview",
+    authors: "Mitra, S., Asthana, MK (2024)",
+    venue:
+      "Neuroscience & Biobehavioral Reviews, Volume 163, 2024, 105751, ISSN 0149-7634",
+    link: "https://doi.org/10.1016/j.neubiorev.2024.105751",
+  },
+  {
+    title:
+      "Inclusive Education for Students with Disabilities: Perspectives from Indonesian and Malaysian Higher Education",
+    authors: "Paramita, P.P., Asthana, MK, Amin, A.S. & Hassim, N. (2024)",
+    venue:
+      "Jurnal Komunikasi: Malaysian Journal of Communication, 40(3), 247-261",
+    link: "#",
+  },
+];
+
 export const journalArticles = [
   {
     title: "Scope and challenges in the implementation of Time Bank in India: a qualitative study",
