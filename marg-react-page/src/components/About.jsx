@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:py-16">
+      <div className="mx-auto max-w-6xl px-4 py-4 sm:py-6">
         <h1 className="mb-8 text-center text-3xl sm:text-4xl font-bold text-neutral-900">
           About Us
         </h1>
@@ -41,6 +41,9 @@ export default function About() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="bg-[#1f2025] py-3 text-center text-white italic text-lg">
+        Memory is the treasury and guardian of all things. -Cicero
       </div>
     </section>
   );
