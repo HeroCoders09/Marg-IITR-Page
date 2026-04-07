@@ -7,7 +7,7 @@ const sectionLabels = {
   currentAffiliation: "Current Affiliation",
   about: "About",
   background: "Background",
-  project: "Project",
+  project: "Projects",
   publications: "Publications",
   workshops: "Workshops",
   conferences: "Conferences",
@@ -79,11 +79,11 @@ function SectionContent({ value }) {
   );
 
   if (!hasListLike && items[0]?.type === "text") {
-    return <p className="text-[16px] leading-8 text-neutral-700">{items[0].text}</p>;
+    return <p className="text-[15px] leading-7 text-neutral-700">{items[0].text}</p>
   }
 
   return (
-    <ul className="list-disc space-y-2.5 pl-5 text-[16px] leading-7 text-neutral-700">
+    <ul className="list-disc space-y-2.5 pl-5 text-[15px] leading-6.5 text-neutral-700">
       {items.map((item, idx) => {
         if (item.type === "bullet") return <li key={idx}>{item.text}</li>;
 
@@ -150,7 +150,7 @@ export default function MemberProfilePage() {
 
   return (
     <main className="bg-neutral-50 py-8 sm:py-10">
-      <div className="mx-auto max-w-384 px-3 sm:px-5 lg:px-8">
+      <div className="mx-auto max-w-450 px-3 sm:px-5 lg:px-8">
         <Link
           to="/people"
           className="mb-4 inline-flex items-center gap-2 text-base font-medium text-[#2e7fb6] hover:text-[#f0642b]"
@@ -164,7 +164,7 @@ export default function MemberProfilePage() {
               <img
                 src={member.image}
                 alt={member.name}
-                className="h-full min-h-155 w-full rounded-2xl object-cover"
+                className="h-full min-h-170 w-full rounded-2xl object-cover"
               />
             </div>
 
@@ -244,7 +244,7 @@ export default function MemberProfilePage() {
 
               <div className="pt-6">
                 {/* Fixed-size section card */}
-                <div className="h-100 rounded-xl bg-neutral-50 p-5 sm:p-6 flex flex-col">
+                <div className="h-107.5 rounded-xl bg-neutral-50 p-5 sm:p-6 flex flex-col">
                   <h2 className="mb-4 shrink-0 text-xl font-bold text-neutral-900">
                     {sectionLabels[selectedTab] ?? selectedTab}
                   </h2>
