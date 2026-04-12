@@ -18,12 +18,14 @@ const sectionLabels = {
   otherPositions: "Other Positions",
   internship: "Internship",
   scholarships: "Scholarships",
+  professionalInterests: "Professional Interests",
 };
 
 const sectionOrder = [
   "currentAffiliation",
   "about",
   "background",
+  "professionalInterests",
   "project",
   "publications",
   "workshops",

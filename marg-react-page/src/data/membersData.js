@@ -7,7 +7,6 @@ import vidishaImg from "../assets/photos/VidishaMaithani.png";
 import tripureshwariImg from "../assets/photos/TripureshwariPaul.png";
 import kaneezImg from "../assets/photos/KaneezFatima.png";
 import vrashalImg from "../assets/photos/VrashalVerma.png";
-import ahalyaImg from "../assets/photos/Ahalya.png";
 import diptiImg from "../assets/photos/DiptiSingh.png";
 import sakshimaImg from "../assets/photos/SakshimaMishra.png";
 import kapilImg from "../assets/photos/KapilFaujdar.png";
@@ -22,6 +21,7 @@ import annikaImg from "../assets/photos/AnnikaDold.png";
 import harshitaImg from "../assets/photos/HarshitaVerma.png";
 import divyanshuImg from "../assets/photos/DivyanshuTiwari.png";
 import alishaImg from "../assets/photos/AlishaChatrath.png";
+import kapilSImg from "../assets/photos/KapilSharma.png";
 
 export const membersData = [
   {
@@ -114,15 +114,17 @@ export const membersData = [
         "Sambath RD, a native of Kerala, received his Bachelor of Fine Arts from the University of Kerala and Masters of Fine Arts (Visual Media) from Amrita Vishwa Vidyapeetham University. Sambath is interested in researching how human behavior is influenced by environmental features, specifically how elements and principles of communication design and art (color, shape, surface finishes) affect human wayfinding behavior. Currently Sambath is a Ph.D. student in the discipline of Cognitive Ergonomics. His research interests include, but are not limited to, the opposing roles of color and elements of design in human spatial learning and wayfinding. Using psychophysiology and virtual reality tools and methods, he investigates the impact of landmark identification and route planning strategies in human spatial navigation. He has submitted a research paper on Humanizing Work and Work Environment 2021 - IIT Guwahati 2021, and also presented a lighting talk at International Interdisciplinary Computational Cognitive Science Summer School 2021. Outside of the lab, he thoroughly enjoys being with his family and friends, paintings, sculpting, gardening, and cooking."
       ],
       background: [
-        "B.F.A. in Sculpture, Raja Ravivarma College of Fine Arts, University of Kerala.",
-        "M.F.A in Broadcast Journalism and Video Production with specialization in Visual Media, Amrita Vishwa Vidyapeetham University.",
-        "Master of Media Business Management specialization in Visual Media Management, Institute of Chartered Financial Analysts of India (ICFAI) University.",
+        "Bachelor of Fine Arts in Sculpture, Raja Ravivarma College of Fine Arts, University of Kerala,(2008).",
+        "Masters of Fine Arts ( Visual Media) specialization in Broadcast Journalism and Video Production, Amrita Vishwa Vidyapeetham University, (2010).",
+        "Master of Media Business Management specialization in Media Management, Institute of Chartered Financial Analysts of India (ICFAI) University.",
+        "PhD in CognitiveVisual Ergonomics, titled “Impact of landmark identification and route learning strategies in spatial navigation” from Indian Institute of Technology Roorkee ( 2023)",
+        "Masters in Psychology Specialisation in Industrial and Organizational Psychology from IGNOU (2025).",
       ],
       project: [
-        "Technology Acceptance and Ease of Use among Elderly.",
-        "Selection of Virtual building models of social context without sex bias.",
-        "Human landmark identification and effect of environmental Information such as birds-eye view and route instructions.",
-        "Investigating the effects of emotional eliciting images on human route learning strategies using psychophysiological tools."
+        "‘संशोधन (Sanshodhan) Research Grant 2025 Sambath RD Research proposal titled: “Resonant Spaces: Unveiling the",
+        "​Emotional and Restorative Dynamics of Indian Architecture” selected under the COA, Outcome-Oriented Research Program for Senior Teachers/Architects).",
+        "Design project of the Kerala State Council for Child Welfare (KSCCW).",
+        "Jail architecture, public attitude and wellbeing of inmates of kerala.",
       ],
       conferences: [
         "Presented a talk on “Gender Differences in Visual Perception on Selected Images of Virtual Building Models” at an International Interdisciplinary Computational Cognitive Science Summer School 2021 by Computational Cognitive Science Colloquium on August 6th, 2021.",
@@ -353,44 +355,6 @@ export const membersData = [
   },
 
   {
-    slug: "ahalya-vs",
-    name: "Ahalya V S",
-    role: "PhD Scholar, Design",
-    category: "research-scholars",
-    image: ahalyaImg,
-    orcid: "0009-0003-7301-5668",
-    sections: {
-      background: [
-        "B.tech - Computer Science and Engineering(CSE), Rajagiri school of Engineering and Technology, Kerala",
-        "M.Des (Experience Design) - National Institute of Fashion Technology(NIFT), Kannur, Kerala.",
-      ],
-      projects: [
-        "Interactive platform for dementia patients.",
-      ],
-      conferences: [
-        "Oral Presentation on paper titled \" Living with Dementia Patients in Nursing Homes : A Case Study\" at the 21st International Conference INDIAN SOCIETY OF ERGONOMICS (ISE) , 21st Humanizing Work and Work Environment (HWWE) and 4th Asian Conference on Ergonomics and Design ( ACED) on 13th December 2023.",
-        "Acceptance for publishing on paper titled “\" Living with Dementia Patients in Nursing Homes : A Case Study\" at the 21st International Conference INDIAN SOCIETY OF ERGONOMICS (ISE) , 21st Humanizing Work and Work Environment (HWWE) and 4th Asian Conference on Ergonomics and Design ( ACED) on 13th December 2023."
-      ],
-      workshops: [
-        "Emerging Design, Innovation, and Technology(EDIT) Workshop: Medical Device Design.",
-        "Visual research methods - SMUS Conference workshop.",
-        "Design Research Methodology workshop conducted by IISC, Bangalore hosted by IIT Guwahati."
-      ],
-      workExperience: [
-        "UI Development trainee -Quest Innovations, Kochi",
-        "Graphic Designer- Techware Labs, Infopark Kochi",
-        "Projects: travel & tourism, uber clone.",
-        "Visual Design intern- Aspiretodream Healthcare, Noida",
-        "Product Design Intern- Manastik Technologies, Pune​",
-        "Projects: Building an interactive platform for dementia patients",
-        "Product Designer- Udaan.com, Bengaluru (B2B E-commerce)​",
-        "Projects: Deals of the day (DOTD) project, For you page (FYP) project",
-        "Masters placement- Lead Experience Designer - Wipro Digital(WD) , Chennai.",
-      ],
-    },
-  },
-
-  {
     slug: "vidisha-maithani",
     name: "Vidisha Maithani",
     role: "Ph.D. Scholar, Cognitive Psychology",
@@ -544,6 +508,30 @@ export const membersData = [
     },
   },
 
+    {
+    slug: "kapil-sharma",
+    name: "KAPIL SHARMA",
+    role: "Ph. D Scholar, Psychology",
+    category: "research-scholars",
+    image: kapilSImg,
+    sections: {
+      about: [
+        "Kapil Sharma is a professional with over 16 years of experience in Technical Sales, specializing in scientific and technology-driven products. His professional expertise lies in the promotion and commercialization of advanced technical solutions through a clear articulation of their functional capabilities, applications, and value propositions.",
+        "He has extensive experience working with large and established organizations, where he has contributed to business development initiatives by effectively aligning technical product features with institutional and customer requirements. His work reflects a strong understanding of both technical concepts and strategic business practices.",
+      ],
+      background: [
+        "Master of Business Administration (MBA) – International Business Institute of Management Studies (IMS), Lal Kuan, Ghaziabad, Uttar Pradesh (2007–2009).",
+        "Bachelor of Science (B.Sc.) – Physics, Chemistry, and Mathematics  D.A.V. (P.G.) College, Bulandshahr, Chaudhary Charan Singh University, Meerut, Uttar Pradesh (2003–2006).",
+      ],
+      professionalInterests: [
+        "Technical and Scientific Sales",
+        "Technology Commercialization",
+        "Business Development and Client Engagement",
+        "Solution-Oriented Sales Strategies"
+      ],
+    },
+  },
+
   {
     slug: "nandini-dutt",
     name: "NANDINI DUTT",
@@ -583,17 +571,18 @@ export const membersData = [
   {
     slug: "kapil-faujdar",
     name: "KAPIL FAUJDAR",
-    role: "Intern",
+    role: "Intern, Psychology",
     category: "interns",
     image: kapilImg,
     sections: {
       background: [
-        "BSc in Mathematics, Physics and Psychology from Rajasthan University. Currently pursuing Masters in Cognitive Science from Indian Institute of Technology Gandhinagar.",
-        "Worked on an independent project on fMRI data analysis and a group project on EEG data analysis.",
+        "BSc in Mathematics, Physics and Psychology from Rajasthan University.",
+        "Currently pursuing Masters in Cognitive Science from Indian institute of technology Gandhinagar.",
+        "Worked on an independent project on fMRI data analysis and group project on EEG data analysis.",
       ],
       internship: [
-        "Understanding the relevance of threat proximity in fear learning using Virtual Reality",
-        "worked with unity, mentalab, lsl and psychopy",
+        "Understanding the relevance of threat proximity in fear learning using Virtual Reality.",
+        "Worked with unity, mentalab, lsl and psychopy",
       ],
     },
   },
@@ -605,17 +594,8 @@ export const membersData = [
     category: "interns",
     image: ishitaImg,
     sections: {
-      internship: [
-        "Internship topic: Effects of Fear Sensitivity and Emotional Reactivity on Memory Update",
-        "Duration of internship: 2 months",
-      ],
-      background: [
-        "3rd year of BSc Psychology at Leipzig University (Germany)",
-      ],
-      scholarships: [
-        "Scholarship holder of the \"DAAD-Network\"",
-        "Scholarship holder of the \"German National Academic Foundation\"",
-        "Scholarship holder of the \"e-fellows-Scholarship\"",
+      about: [
+        "Ishita Sahdev is a dedicated clinical psychology student from Noida, currently pursuing her dual Master’s degree in Clinical Psychology at Amity University, Noida. With a strong academic foundation and focused interests in trauma-informed care, psychological resilience, and neuropsychology, she integrates empathic insight with scientific and analytical rigor in her academic pursuits. She previously contributed to an NPTEL research project at IIT Roorkee on Neuroergonomics and Brain–Computer Interfaces (BCI), where she engaged in interdisciplinary inquiry at the intersection of neuroscience, psychology, and technology. This experience enhanced her understanding of cognitive processes, human–machine interaction, and the application of adaptive technologies in mental health research and practice.",
       ],
     },
   },
@@ -628,16 +608,12 @@ export const membersData = [
     image: arkajitImg,
     sections: {
       internship: [
-        "Internship topic: Effects of Fear Sensitivity and Emotional Reactivity on Memory Update",
-        "Duration of internship: 2 months",
+        "Completed an internship project titled “Developing a Movie Database with Parameters Such as Valence, Arousal, and Intensity Influencing Emotional Perception.",
+        "Created a protocol for developing an Indian movie database using Tobii Pro Lab.",
       ],
       background: [
-        "3rd year of BSc Psychology at Leipzig University (Germany)",
-      ],
-      scholarships: [
-        "Scholarship holder of the \"DAAD-Network\"",
-        "Scholarship holder of the \"German National Academic Foundation\"",
-        "Scholarship holder of the \"e-fellows-Scholarship\"",
+        "Completed B.Sc. in Applied Psychology from The Neotia University with Gold Medal Distinction.",
+        "Currently pursuing M.Sc. in Neuropsychology at the National Forensic Sciences University, Gandhinagar.",
       ],
     },
   },

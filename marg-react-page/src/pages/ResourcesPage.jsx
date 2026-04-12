@@ -31,7 +31,7 @@ function EquipmentCard({ item }) {
           className="inline-flex items-center gap-2 text-lg font-semibold leading-7 text-neutral-900 transition hover:text-[#f0642b]"
         >
           {item.title}
-          <FaExternalLinkAlt className="text-xs opacity-70" />
+          {item.link !== "#" && <FaExternalLinkAlt className="text-xs opacity-70" />}
         </a>
       </div>
     </article>
@@ -50,7 +50,9 @@ function SoftwareCard({ software }) {
         <h4 className="font-semibold text-neutral-900 transition group-hover:text-[#f0642b]">
           {software.name}
         </h4>
-        <FaExternalLinkAlt className="text-xs text-neutral-400 transition group-hover:text-[#f0642b]" />
+        { software.link!=="#" && (
+          <FaExternalLinkAlt className="text-xs text-neutral-400 transition group-hover:text-[#f0642b]" />
+        )}
       </div>
     </a>
   );

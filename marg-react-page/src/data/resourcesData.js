@@ -25,12 +25,12 @@ export const labEquipments = [
   {
     title: "Sound Level Meter",
     image: eq5,
-    link: "https://example.com/sound-level-meter", 
+    link: "#", 
   },
   {
     title: "Sound Card Driver",
     image: eq7,
-    link: "https://example.com/sound-card-driver", 
+    link: "#", 
   },
   {
     title: "Ishihara’s Tests for Colour Deficiency",
@@ -41,8 +41,8 @@ export const labEquipments = [
 ];
 
 export const softwares = [
-  { name: "Vizard", link: "https://example.com/vizard" }, 
-  { name: "BIOPAC", link: "https://example.com/biopac-software" }, 
-  { name: "AcqKnowledge", link: "https://example.com/acqknowledge" }, 
+  { name: "Vizard", link: "#" }, 
+  { name: "BIOPAC", link: "#" }, 
+  { name: "AcqKnowledge", link: "#" }, 
   { name: "E-Prime", link: "https://pstnet.com/products/e-prime/" }, 
 ];

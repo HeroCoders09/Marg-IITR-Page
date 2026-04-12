@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -23,16 +23,17 @@ function HomePage() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/index.html" element={<HomePage />} />
         <Route path="/people" element={<><PeoplePage /><Footer showContact={false} /></>} />
         <Route path="/research" element={<><ResearchPage /><Footer showContact={false} /></>} />
         <Route path="/resources" element={<><ResourcesPage /><Footer showContact={false} /></>} />
         <Route path="/join-us" element={<><JoinUsPage /><Footer showContact={false} /></>} />
         <Route path="/people/:slug" element={<MemberProfilePage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
