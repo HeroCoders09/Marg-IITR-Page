@@ -10,6 +10,7 @@ import abhishek from "../assets/photos/AbhishekKarmakar.png";
 import priyadarshini from "../assets/photos/PriyadarshiniDeoriResize.png";
 import raksha from "../assets/photos/RakshaSinghResize.png";
 import kapilS from "../assets/photos/KapilSharmaResize.png";
+import vaishaliSharma from "../assets/photos/vaishaliSharmaResize.png";
 
 import kapil from "../assets/photos/KapilFaujdarResize.png";
 import anshita from "../assets/photos/AnshitaSinghResize.png";
@@ -20,6 +21,8 @@ import ishita from "../assets/photos/IshitaSachdevaResize.png";
 import arkajit from "../assets/photos/ArkajitChatterjeeResize.png";
 import annika from "../assets/photos/AnnikaDoldResize.png";
 import alisha from "../assets/photos/AlishaChatrathResize.png";
+import ashi from "../assets/photos/AshiJasujaResize.png";
+import madeline from "../assets/photos/MadelineSaadResize.png";
 
 import ankita from "../assets/photos/AnkitaVermaResize.png";
 import sharmili from "../assets/photos/SharmiliMitraResize.png";
@@ -45,6 +48,7 @@ export const researchScholars = [
   { name: "Priyadarshini Deori", role: "Ph.D. Scholar, Cognitive Psychology", image: priyadarshini },
   { name: "Raksha Singh", role: "Ph.D. Scholar, Cognitive Psychology", image: raksha },
   { name: "Kapil Sharma", role: "Ph.D. Scholar, Cognitive Psychology", image: kapilS },
+  { name: "Vaishali Sharma", role: "Ph.D. Scholar, Cognitive Psychology", image: vaishaliSharma },
 ];
 
 export const interns = [
@@ -57,6 +61,8 @@ export const interns = [
   { name: "Annika Dold", role: "Intern, Psychology", image: annika },
   { name: "Alisha Chatrath", role: "Intern, Psychology", image: alisha },
   { name: "Kapil Faujdar", role: "Intern, Psychology", image: kapil },
+  { name: "Ashi Jasuja", role: "Intern, Psychology", image: ashi },
+  { name: "Madeline Saad", role: "Intern, Psychology", image: madeline },
 ];
 
 export const alumni = [

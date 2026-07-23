@@ -19,6 +19,8 @@ const sectionLabels = {
   internship: "Internship",
   scholarships: "Scholarships",
   professionalInterests: "Professional Interests",
+  achievements: "Achievements",
+  researchPublications: "Research & Publications",
 };
 
 const sectionOrder = [
@@ -28,9 +30,11 @@ const sectionOrder = [
   "professionalInterests",
   "project",
   "publications",
+  "research&Publications",
   "workshops",
   "conferences",
   "awards",
+  "achievements",
   "media",
   "memberships",
   "workExperience",

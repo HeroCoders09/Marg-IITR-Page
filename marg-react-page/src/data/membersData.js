@@ -22,6 +22,9 @@ import harshitaImg from "../assets/photos/HarshitaVerma.png";
 import divyanshuImg from "../assets/photos/DivyanshuTiwari.png";
 import alishaImg from "../assets/photos/AlishaChatrath.png";
 import kapilSImg from "../assets/photos/KapilSharma.png";
+import vaishaliSharmaImg from "../assets/photos/vaishaliSharma.png";
+import ashiJasujaImg from "../assets/photos/AshiJasuja.png";
+import madelineSaadImg from "../assets/photos/MadelineSaad.png";
 
 export const membersData = [
   {
@@ -508,7 +511,7 @@ export const membersData = [
     },
   },
 
-    {
+  {
     slug: "kapil-sharma",
     name: "KAPIL SHARMA",
     role: "Ph. D Scholar, Psychology",
@@ -529,6 +532,44 @@ export const membersData = [
         "Business Development and Client Engagement",
         "Solution-Oriented Sales Strategies"
       ],
+    },
+  },
+
+  {
+    slug: "vaishali-sharma",
+    name: "VAISHALI SHARMA",
+    role: "Ph. D Scholar, Psychology",
+    category: "research-scholars",
+    image: vaishaliSharmaImg,
+    sections: {
+      about: [
+        "Vaishali Sharma is a PhD Scholar at the Indian Institute of Technology Roorkee. Her research interests lie at the intersection of cognitive psychology and applied mental health, with a specific focus on burnout, trauma recovery, and psychological well-being.",
+      ],
+      background: [
+        "PhD Scholar, Indian Institute of Technology Roorkee",
+        "MA/MSc in Psychology, Banaras Hindu University (2024) | First Position; CGPA 9.5",
+        "PG Diploma in Guidance & Counselling, Jamia Millia Islamia",
+        "BA (English & Psychology), Indraprastha College for Women, University of Delhi | CGPA 8.5",
+      ],
+      achievements: [
+        "Late Shephali Nandy Memorial Gold Medal (BHU)",
+        "Late Chandra Bhal Dwivedi Memorial Gold Medal (BHU)",
+        "BHU University Medal (2024)",
+        "All India Rank 1, BHU PhD Entrance Examination (2025)",
+        "UGC-NET Qualified (99.73 Percentile)",
+        "GATE Psychology (AIR 121, First Attempt)"
+      ],
+      researchPublications: [
+        "Dissertation: \"Quality of Life and Burnout Among Teachers in Private Schools in India\" (Published in IJEMMASSS).",
+        "Conference Presentations: 3rd International Conference on Positive Psychology (NPPA, 2025).",
+        "Undergraduate Research: Investigation of anxiety in young adults during COVID-19 (using STAI) and caregiver burden in substance dependence."
+      ],
+      workExperience: [
+        "Vaishali has extensive training in clinical and applied settings, including internships at:",
+        "SMS Psychiatric Center, Jaipur: Focused on clinical observation and research on caregiver burden.",
+        "Fortis Hospital: Training in Art Therapy, Psycho-oncology, and School Psychology.",
+        "Clinical Intership: Training at the clinic of Dr. Anil Tambi, Jaipur, under RCI-registered supervision.",
+      ]
     },
   },
 
@@ -700,6 +741,39 @@ export const membersData = [
       ],
       background: [
         "B.A. Applied Psychology Honors with Reseach, AIPS, Amity University, Noida",
+      ],
+    },
+  },
+
+  {
+    slug: "ashi-jasuja",
+    name: "ASHI JASUJA",
+    role: "Intern, Psychology",
+    category: "interns",
+    image: ashiJasujaImg,
+    sections: {
+      internship: [
+        "Completed a SPARK Summer Internship at MARG Lab, IIT Roorkee, working on a project titled “Effect of Prior Social Information on Fear Conditioning.” ",
+        " Conducted psychophysiological experiments using skin conductance responses (SCR) to investigate fear acquisition, retention, and extinction, with hands-on experience in PsychoPy, BIOPAC, experimental design, and behavioral research.",
+      ],
+      background: [
+        "Completed B.A. (Hons.) in Psychology from Banaras Hindu University. Currently pursuing M.Sc. in Neuropsychology at the National Forensic Sciences University, Gandhinagar.",
+      ],
+    },
+  },
+
+  {
+    slug: "madeline-saad",
+    name: "Madeline Saad",
+    role: "Intern, Psychology",
+    category: "interns",
+    image: madelineSaadImg,
+    sections: {
+      internship: [
+        "Topic: Effect of Threat Proximity in Learning Fear Response Using Virtual Reality, Duration: 2 months"
+      ],
+      background: [
+        "4th year BSc Neuroscience at University of Lethbridge",
       ],
     },
   },
