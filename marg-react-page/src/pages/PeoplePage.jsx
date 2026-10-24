@@ -175,14 +175,14 @@ export default function PeoplePage() {
         </a>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-8">
-        <SectionLabel>Research Scholars</SectionLabel>
-        <PeopleGrid data={researchScholars} />
-      </section>
-
       <section className="mx-auto max-w-7xl px-4 pt-8 pb-10">
         <SectionLabel>Alumni</SectionLabel>
         <PeopleGrid data={alumni} />
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-8">
+        <SectionLabel>Research Scholars</SectionLabel>
+        <PeopleGrid data={researchScholars} />
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-8">

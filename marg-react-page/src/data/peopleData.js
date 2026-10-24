@@ -1,7 +1,6 @@
 import asthana from "../assets/photos/AsthanaSirResize.png";
 
 import tripureshwari from "../assets/photos/TripureshwariPaulResize.png";
-import kaneez from "../assets/photos/KaneezFatimaResize.png";
 import vidisha from "../assets/photos/VidishaMaithaniResize.png";
 import vrashal from "../assets/photos/VrashalVermaResize.png";
 import dipti from "../assets/photos/DiptiSinghResize.png";
@@ -11,6 +10,8 @@ import priyadarshini from "../assets/photos/PriyadarshiniDeoriResize.png";
 import raksha from "../assets/photos/RakshaSinghResize.png";
 import kapilS from "../assets/photos/KapilSharmaResize.png";
 import vaishaliSharma from "../assets/photos/vaishaliSharmaResize.png";
+// TODO: add a photo for Anshika Sharma, e.g.
+// import anshika from "../assets/photos/AnshikaSharmaResize.png";
 
 import kapil from "../assets/photos/KapilFaujdarResize.png";
 import anshita from "../assets/photos/AnshitaSinghResize.png";
@@ -24,6 +25,7 @@ import alisha from "../assets/photos/AlishaChatrathResize.png";
 import ashi from "../assets/photos/AshiJasujaResize.png";
 import madeline from "../assets/photos/MadelineSaadResize.png";
 
+import kaneez from "../assets/photos/KaneezFatimaResize.png";
 import ankita from "../assets/photos/AnkitaVermaResize.png";
 import sharmili from "../assets/photos/SharmiliMitraResize.png";
 import sambath from "../assets/photos/SambathRdResize.png";
@@ -37,18 +39,27 @@ export const principalInvestigator = {
   bio: `The primary motivation behind Dr. Asthana’s research is the observation that memory helps individuals handle everyday challenges. His research examines psychological, physiological, and cognitive mechanisms during memory consolidation and reconsolidation.`,
 };
 
+export const alumni = [
+  { name: "Dr. Sharmili Mitra", role: "Assistant Professor, O.P. Jindal Global University", image: sharmili },
+  { name: "Dr. Sambath RD", role: "Assistant Professor, TKM College of Engineering Kollam Kerala", image: sambath },
+  { name: "Dr. Ankita Verma", role: "Assistant Professor, O.P. Jindal Global University", image: ankita },
+  { name: "Dr. Hiranmayakaparthi Ramadugu", role: "Project Generalist - Soul AI", image: hiranmaya },
+  { name: "Dr. Kaneez Fatima", role: "Ph.D. Scholar, Cognitive Psychology", image: kaneez },
+];
+
 export const researchScholars = [
   { name: "Tripureshwari Paul", role: "Ph.D. Scholar, Cognitive Psychology", image: tripureshwari },
-  { name: "Kaneez Fatima", role: "Ph.D. Scholar, Cognitive Psychology", image: kaneez },
   { name: "Vrashal Verma", role: "Ph.D. Scholar, Design", image: vrashal },
   { name: "Vidisha Maithani", role: "Ph.D. Scholar, Cognitive Psychology", image: vidisha },
-  { name: "Dipti Singh", role: "Ph.D. Scholar,Cognitive Psychology", image: dipti },
+  { name: "Dipti Singh", role: "Ph.D. Scholar, Cognitive Psychology", image: dipti },
   { name: "Sakshima Mishra", role: "Ph.D. Scholar, Cognitive Psychology", image: sakshima },
   { name: "Abhishek Karmakar", role: "Ph.D. Scholar, Cognitive Psychology", image: abhishek },
   { name: "Priyadarshini Deori", role: "Ph.D. Scholar, Cognitive Psychology", image: priyadarshini },
   { name: "Raksha Singh", role: "Ph.D. Scholar, Cognitive Psychology", image: raksha },
   { name: "Kapil Sharma", role: "Ph.D. Scholar, Cognitive Psychology", image: kapilS },
   { name: "Vaishali Sharma", role: "Ph.D. Scholar, Cognitive Psychology", image: vaishaliSharma },
+  // Photo pending: set `image` once AnshikaSharmaResize.png is added.
+  { name: "Anshika Sharma", role: "Junior Research Fellow", image: null },
 ];
 
 export const interns = [
@@ -63,11 +74,4 @@ export const interns = [
   { name: "Kapil Faujdar", role: "Intern, Psychology", image: kapil },
   { name: "Ashi Jasuja", role: "Intern, Psychology", image: ashi },
   { name: "Madeline Saad", role: "Intern, Psychology", image: madeline },
-];
-
-export const alumni = [
-  { name: "Dr. Sharmili Mitra", role: "Assistant Professor, O.P. Jindal Global University", image: sharmili },
-  { name: "Dr. Sambath RD", role: "Assistant Professor, TKM College of Engineering Kollam Kerala", image: sambath },
-  { name: "Dr. Ankita Verma", role: "Assistant Professor, O.P. Jindal Global University", image: ankita },
-  { name: "Dr. Hiranmayakaparthi Ramadugu", role: "Project Generalist - Soul AI", image: hiranmaya },
 ];
